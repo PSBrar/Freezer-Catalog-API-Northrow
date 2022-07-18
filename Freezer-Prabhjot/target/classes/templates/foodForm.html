@@ -1,0 +1,28 @@
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset = "UTF-8" ></meta>
+    </head>
+<body>
+
+	<div th:if="${message}">
+		<h2 th:text="${message}"></h2>
+	</div>
+
+	<div>
+		<form method="POST" action="/food">
+			<label for="name"> Enter Food Name <label><br/>
+			<input type="text" name="name">
+			
+			<label for="type"> Enter Food Type <label><br/>
+			<input type="text" name="type">
+			
+			<label for="quantity"> Enter Food Quantity <label><br/>
+			<input type="number" name="quantity">
+			
+			<br/>
+			<input type="submit"> 
+		</form>
+	</div>
+
+</body>
+</html>
